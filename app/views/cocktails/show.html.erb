@@ -1,11 +1,11 @@
-<div class="header">
+<div class="header-cocktail">
   <h1 class="orange"><%= @cocktail.name.upcase %></h1>
 </div>
 
 
 <div class="cocktail-container">
   <div class="cocktail-item left">
-    <%= image_tag "#{@cocktail.name}.png"%>
+    <%= cl_image_tag @cocktail.photo,  crop: :fill %>
   </div>
   <div class="cocktail-item right">
     <div class="mt-3">

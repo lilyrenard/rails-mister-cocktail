@@ -42,8 +42,12 @@ a:hover {
   color: #fa4616;
 }
 
+.white {
+  color: white;
+}
+
 .container {
-  max-width: 1140px;
+  max-width: 900px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -52,5 +56,5 @@ a:hover {
 }
 
 .header {
-  margin: 50px;
+  padding: 50px;
 }
