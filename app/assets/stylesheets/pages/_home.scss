@@ -29,7 +29,13 @@ a {
 
 a:hover {
   text-decoration:none;
-  color: #fa4616;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #fa4616;
+  border: none;
+  color: white;
 }
 
 .orange {
