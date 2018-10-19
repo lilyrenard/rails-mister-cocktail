@@ -1,0 +1,25 @@
+.cocktail-card {
+  background-color: #fff;
+}
+
+.cocktail-name {
+  text-align: center;
+  padding-top: 2rem 2rem;
+  font-weight: 300;
+  line-height: 1.15;
+  color: #fa4616;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-weight: light;
+}
+
+.cocktail-image {
+  height: 0;
+  position: relative;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}

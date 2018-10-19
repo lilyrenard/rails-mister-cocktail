@@ -1,0 +1,18 @@
+<div class="header">
+  <h1><span class="orange"><%= @cocktails.length %></span> COCKTAILS </h1>
+</div>
+
+<div class="container">
+  <% @cocktails.each do |cocktail|%>
+    <div class="col-xs-12 col-sm-4">
+      <div class="cocktail-card">
+        <div class="cocktail-image">
+          <%= image_tag "#{cocktail.name}.png"%>
+        </div>
+        <div class="cocktail-name orange">
+          <h3><%= link_to cocktail.name, cocktail_path(cocktail.id) %></h3>
+        </div>
+      </div>
+    </div>
+  <% end%>
+</div>

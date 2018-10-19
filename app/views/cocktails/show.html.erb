@@ -1,0 +1,33 @@
+<div class="header">
+  <h1 class="orange"><%= @cocktail.name.upcase %></h1>
+</div>
+
+
+<div class="cocktail-container">
+  <div class="cocktail-item left">
+    <%= image_tag "#{@cocktail.name}.png"%>
+  </div>
+  <div class="cocktail-item right">
+    <div class="mt-3">
+      <h3 class="orange">INGREDIENTS FOR <%= @cocktail.name.upcase %></h3>
+      <% @cocktail.doses.each do |dose| %>
+      <p><span class="orange"> <%= dose.description %></span> <%= dose.ingredient.name %></p>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+<div class="container form">
+  <div class="mt-3">
+    <div class="cocktail-form">
+      <h2>ADD AN INGREDIENT</h2>
+      <%= simple_form_for [@cocktail, @dose] do |f| %>
+        <%= f.input :description %>
+        <%= f.association :ingredient %>
+        <%= f.submit "Add", class: "btn btn-danger" %>
+      <% end %>
+    </div>
+  </div>
+  </div>
+

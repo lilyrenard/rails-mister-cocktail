@@ -1,1 +1,50 @@
 // Specific CSS for your home-page
+body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 45px;
+}
+
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 35px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #fa4616;
+}
+
+a:hover {
+  text-decoration:none;
+  color: #fa4616;
+}
+
+.orange {
+  color: #fa4616;
+}
+
+.container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.header {
+  margin: 50px;
+}
